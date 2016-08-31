@@ -106,7 +106,7 @@ clear gyro_integration_method % Gyro integration method used in AHRS Feedback me
 % User can select which to use.
 disp(' ')
 disp('Available UAV Truth Data Files:')
-dir_mat_files = dir('UavData\*.mat');
+dir_mat_files = dir('UavData/*.mat');
 for nFile=1:length(dir_mat_files)
     fprintf('   %d: %s\n',nFile,dir_mat_files(nFile).name);
 end
